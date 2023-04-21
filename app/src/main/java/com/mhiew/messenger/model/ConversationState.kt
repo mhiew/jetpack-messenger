@@ -10,4 +10,5 @@ import com.mhiew.messenger.MessageFactory
 data class ConversationState(
     val message: List<Message> = MessageFactory.generateMessages(),
     val contacts: List<Contact> = ContactFactory.generateContacts(),
+    val selectedMessage: Message? = null,
 )
